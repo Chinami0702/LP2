@@ -21,10 +21,22 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Marcellus&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+<!-- オプション：テーマCSS（ドットに影響あり） -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 <link rel="stylesheet" href="/assets/style/style.css">
+<link rel="stylesheet" href="/assets/script/slick/slick.css">
+
 </head>
 <body>
   <header class="header">
+    <div class="header_img">
+      <picture>
+        <source media="(min-width:768px)" src="/assets/image/mainVIsual_pc.jpg">
+        <img src="/assets/image/mainVIsual_sp.jpg" alt="" class="header_img_img" >
+      </picture>
+    </div>
     <div class="header_wrapper">
       <picture>
           <source media="(min-width:768px)" src="/assets/image/Kira-meki_pc.png">
@@ -32,104 +44,168 @@
         </picture>
     </div>
     <div class="header_container">
+      <div class="header_container_box">
       <h1 class="header_container_h1">Kirameki<br>Cream</h1>
-      <p class="header_container_p">肌のうるおい、煌めく</p>
+      <p class="header_container_p">肌のうるおい、煌めく。</p>
+    </div>
     </div>
    </header>
   <main>
     <section class="main_intro">
       <div class="main_intro_container">
         <div class="main_intro_container_box">
-          <h2 class="main_intro_container_box_h2">キラメキクリーム</h2>
-          <p class="main_intro_container_box_p">税込4,000円</p>
+          <div>
+           <h2 class="main_intro_container_box_h2">キラメキクリーム</h2>
+           <p class="main_intro_container_box_p">税込4,000円</p>
+          </div>
           <div class="main_intro_container_box_box">
-            <div class="main_intro_container_box_box_top">
-              <p>オンラインショップへ</p>
-            </div>
-            <div class="main_intro_container_box_box_bottom">
-              <p>購入する</p>
-            </div>
+            <a class="main_intro_container_box_box_top" href="/">
+             オンラインショップへ
+            </a>
+            <a class="main_intro_container_box_box_top" href=" /cart/">
+              購入する
+            </a>
           </div>
         </div>
       </div>
     </section>
     <section class="main_service">
       <div class="main_service_container">
-       <h2 class="main_service_h2">Keep Your Skin Beautiful</h2>
-       <p class="main_service_container_p">お肌を美しく保つ</p>
-       <p class="main_service_container_text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+        <div class="main_service_container_box">
+          <div class="main_service_container_box_box">
+         <h2 class="main_service_h2">Keep Your Skin Beautiful.</h2>
+         <p class="main_service_container_p">お肌を美しく保つ</p>
+         <p class="main_service_container_text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+       </div>
+       </div>
       </div>
     </section>
-    <section class="main_review">
-        <div class="main_review_container">
-            <h2 class="main_review_container_h2">Voices</h2>
-            <p class="main_review_container_p">お客様の声</p>
-            <div class="main_review_container_box">
-                <div class="main_review_container_box_box">
-                    <div class="main_review_container_box_box_box">
-                        <div class="main_review_container_box_box_box_img">
-                          <picture>
-                            <source media="(min-width:768px)" src="/assets/image/review_01.jpg">
-                            <img src="/assets/image/review_01.jpg" alt="">
-                          </picture>
-                        </div>
-                        <p class="main_review_container_box_box_box_p">Aさん</p>
-                        <div class="main_review_container_box_box_box_text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</div>
-                    </div>
-                </div>
+  <section class="main_review">
+  <div class="main_review_container">
+    <h2 class="main_review_container_h2">Voices</h2>
+    <p class="main_review_container_p">お客様の声</p>
+    <div class="main_review_container_box">
+      <div class="main_review_container_box_box">
+        <div class="main_slick">
+          
+          <!-- スライド1 -->
+          <div class="slick_item">
+            <div class="main_review_container_box_box_box_img">
+              <picture>
+                <source media="(min-width:768px)" srcset="/assets/image/review_0101.png">
+                <img src="/assets/image/review_0101.png" alt="">
+              </picture>
             </div>
-        </div>
-    </section>
-    <section class="main_q$a">
-      <div class="main_q&a_container"> 
-        <h2 class="main_g&a_container_h2">Q&A</h2>
-        <p class="main_q&a_container_p">よくあるご質問</p>
-        <div class="main_q&a_container_box">
-          <p>Q. ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
-          <p>A. ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
-        </div>
-        <div class="main_q&a_container_box">
-          <p>Q. ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
-          <p>A. ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
-        </div>
-        <div class="main_q&a_container_box">
-          <p>Q. ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
-          <p>A. ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
-        </div>
-        <div class="main_q&a_container_box">
-          <p>Q. ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
-          <p>A. ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
-        </div>
-        </div>
-   </section>
+            <p class="main_review_container_box_box_box_p">Aさん</p>
+            <div class="main_review_container_box_box_box_text">
+              ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+            </div>
+          </div>
+
+          <!-- スライド2 -->
+          <div class="slick_item">
+            <div class="main_review_container_box_box_box_img">
+              <picture>
+                <source media="(min-width:768px)" srcset="/assets/image/review_0101.png">
+                <img src="/assets/image/review_0101.png" alt="">
+              </picture>
+            </div>
+            <p class="main_review_container_box_box_box_p">Bさん</p>
+            <div class="main_review_container_box_box_box_text">
+              ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+            </div>
+          </div>
+
+          <!-- スライド3 -->
+          <div class="slick_item">
+            <div class="main_review_container_box_box_box_img">
+              <picture>
+                <source media="(min-width:768px)" srcset="/assets/image/review_0101.png">
+                <img src="/assets/image/review_0101.png" alt="">
+              </picture>
+            </div>
+            <p class="main_review_container_box_box_box_p">Cさん</p>
+            <div class="main_review_container_box_box_box_text">
+              ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+            </div>
+          </div>
+
+        </div><!-- .main_slick -->
+      </div><!-- .main_review_container_box_box -->
+    </div><!-- .main_review_container_box -->
+  </div><!-- .main_review_container -->
+</section>
+ <section class="main_qna">
+  <div class="main_qna_container">
+    <h2 class="main_qna_container_h2">Q&A</h2>
+    <p class="main_qna_container_p">よくあるご質問</p>
+   <div class="main_qna_container_box">
+      <div class="qa_item">
+        <p class="question">Q. ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+           <span class="toggle-btn">▼</span>
+        </p>
+        <p class="answer">A. ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+      </div>
+      <div class="qa_item">
+        <p class="question">Q. ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+           <span class="toggle-btn">▼</span>
+        </p>
+        <p class="answer">A. ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+      </div>
+      <div class="qa_item">
+        <p class="question">Q. ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+           <span class="toggle-btn">▼</span>
+        </p>
+        <p class="answer">A. ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+      </div>
+      <div class="qa_item">
+        <p class="question">Q. ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+           <span class="toggle-btn">▼</span>
+        </p>
+        <p class="answer">A. ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+      </div>
+      <div class="qa_item">
+        <p class="question">Q. ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります
+           <span class="toggle-btn">▼</span>
+        </p>
+        <p class="answer">A. ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+      </div>
+     </div>
+  </div>
+</section>
    <section class="main_intro">
       <div class="main_intro_container">
         <div class="main_intro_container_box">
-          <h2 class="main_intro_container_box_h2">キラメキクリーム</h2>
-          <p class="main_intro_container_box_p">税込4,000円</p>
+          <div>
+           <h2 class="main_intro_container_box_h2">キラメキクリーム</h2>
+           <p class="main_intro_container_box_p">税込4,000円</p>
+          </div>
           <div class="main_intro_container_box_box">
-            <div class="main_intro_container_box_box_top">
-              <p>オンラインショップへ</p>
-            </div>
-            <div class="main_intro_container_box_box_bottom">
-              <p>購入する</p>
-            </div>
+            <a class="main_intro_container_box_box_top" href="/">
+             オンラインショップへ
+            </a>
+            <a class="main_intro_container_box_box_top" href=" /cart/">
+              購入する
+            </a>
           </div>
         </div>
       </div>
     </section>
   </main>
-  <footer>
+  <footer class="footer">
     <div class="footer_container">
       <h2 class="footer_h2">Kira-meki</h2>
       <div class="footer_text">
-        <p>会社概要</p>
-        <p>個人情報保護ポリシー</p>
-        <p>お問い合わせ</p>
+        <a href=" /company/">会社概要</a>
+        <a href=" /privacy-policy/">個人情報保護ポリシー</a>
+        <a href=" /contact/">お問い合わせ</a>
       </div>
       <small class="footer_container_small">© 2023 Kira-meki Inc. All rights reserved.</small>
     </div>
   </footer>
+  <script src="/assets/script/jquery-3.7.1.min (1).js"></script>
+  <script src="/assets/script/slick/slick.js"></script>
+  <script src="/assets/script/main.js"></script>
   
 </body>
 </html>
