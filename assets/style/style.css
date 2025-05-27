@@ -247,7 +247,8 @@ li {
   }
 }
 .main_review{
-  padding: 2rem 1rem 2rem 1rem;
+  padding: 2rem .3rem 2rem .3rem;
+  overflow-x: hidden;
 }
 .main_review_container{
   width: 100%;
@@ -265,19 +266,47 @@ line-height: 1.1;
   text-align: center;
 }
 .main_review_container_box{
-  padding: 2rem .3rem 2rem .3rem;
+  padding: 1rem .3rem 2rem .3rem;
 }
 .main_review_container_box_box{
-  width: 28rem;
+  width: 100%;
   height: 34.4rem;
-  /* background-color: #DBF7F9; */
   margin: 0 auto;
 }
 .main_slick{
-  padding: 3rem 2rem 2rem 2rem;
-  width: 24.9rem;
+  padding: 3rem 1rem 0rem 1rem;
+  /* width: 100% */
+  width: 28rem;
+  max-width: 120rem;
   margin: 0 auto;
+ 
+}
+@media (min-width: 768px) {
+  .main_slick {
+    width: 90%;
+    max-width: 90rem;
+    margin: 0 auto;
+  }
+}
+.main_slick .slick-slide {
+  margin: 0 10px;
+  box-sizing: border-box;
+}
+.main_slick .slick-list {
+  margin: 0 -10px;
+}
+.slick_item {
+  width: 100%;
+  height: 34.4rem;
   background-color: #DBF7F9;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+@media (min-width: 768px) {
+  .slick_item {
+    width: 30rem;
+    height: 34.4rem;
+  }
 }
 .slick-next, 
 .slick-arrow{
@@ -300,11 +329,24 @@ line-height: 1.1;
   padding: .8rem 0 0 0;
 }
 .main_review_container_box_box_box_text{
-  /* width: 25rem; */
-  height: 16rem;
   font-size: 1.4rem;
   padding: 2rem 0 0 0;
 
+}
+.slick-dots {
+    position: absolute;
+    bottom: -25px;
+    display: block;
+    width: 90%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .slick-dots {
+       width: 100%;
+    }
 }
 .main_qna{
   background: linear-gradient(to right, 
