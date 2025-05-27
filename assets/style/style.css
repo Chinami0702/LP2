@@ -343,6 +343,8 @@ line-height: 1.1;
     list-style: none;
     text-align: center;
 }
+
+
 @media (min-width: 768px) {
     .slick-dots {
        width: 100%;
