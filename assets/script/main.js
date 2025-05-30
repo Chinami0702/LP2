@@ -1,20 +1,19 @@
-$(document).ready(function () {
-  $(".qa_item_box").on("click", function () {
-    console.log("クリックされた"); // ←これを追加
+document.addEventListener("DOMContentLoaded", function () {
+  const toggleButtons = document.querySelectorAll(".toggle-btn");
 
-    const answer = $(this).next(".qa_answer");
-    const btn = $(this).find(".toggle-btn");
+  toggleButtons.forEach(button => {
+    button.addEventListener("click", function () {
+      const qaItem = this.closest(".qa_item");
 
-    answer.slideToggle(300);
-    btn.toggleClass("open");
+      // 開閉切り替え
+      qaItem.classList.toggle("active");
+
+      // アイコン回転のクラス切り替え
+      this.classList.toggle("open");
+    });
   });
 });
-document.querySelectorAll('.toggle-btn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const item = btn.closest('.qa_item');
-    item.classList.toggle('active');
-  });
-});
+
 $(function () {
   $('.main_slick').slick({
     autoplay: true,
@@ -22,8 +21,8 @@ $(function () {
     arrows: true, // ← → 表示
     dots: true,   // ●●● 表示
     infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+    slidesToShow: 3,
+    slidesToScroll: 3,
     prevArrow: '<img src="/assets/image/arrow-left-circle-fill.png" class="slide-arrow prev-arrow">',
     nextArrow: '<img src="/assets/image/arrow-right-circle-fill.png" class="slide-arrow next-arrow">',
     responsive: [
@@ -32,15 +31,6 @@ $(function () {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 1920,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
           infinite: true,
           dots: true
         }
