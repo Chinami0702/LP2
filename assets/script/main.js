@@ -1,5 +1,13 @@
 
 $(function () {
+  $(window).on('scroll', function () {
+  if ($(this).scrollTop() > 300) {
+    $('.TopYajirushi_wrapper').fadeIn();
+  } else {
+    $('.TopYajirushi_wrapper').fadeOut();
+  }
+});
+
   $(".qa_item_box").on("click",function(){
     $(this).closest(".qa_item").toggleClass("active");
     $(this).find(".toggle-btn").toggleClass("open");  
@@ -7,8 +15,8 @@ $(function () {
   $('.main_slick').slick({
     autoplay: true,
     adaptiveHeight: true,
-    arrows: true, // ← → 表示
-    dots: true,   // ●●● 表示
+    arrows: true,
+    dots: true,
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 3,
