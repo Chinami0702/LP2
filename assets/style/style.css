@@ -32,8 +32,20 @@ li {
           font-size: 62.5%;
      }
 }
-.header_img{
+.header {
   position: relative;
+  background-image: url(/assets/image/main_sp.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 60rem;
+  padding: 3rem 2rem;
+}
+.header_wrapper {
+  background-size: 100% 45rem; /* 横100%、縦45remだけ表示 */
+  background-position: top left;
+  padding: 2rem;
 }
 @media(min-width:768px){
   .header{
@@ -44,21 +56,9 @@ li {
     width: 100%;
     height: 72rem;
   }
-  .header_img{
-    display: none;
-  }
 }
-.header_img_img{
-  width: 100%;
-  height: 40rem;
-}
-.header_wrapper {
-   position: absolute; /* 上端に固定するため */
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 10; /* 必要に応じて他の要素より前に出す */ 
-}
+
+
 .header_wrapper_img {
   display: block;
   width: 13.9rem;
@@ -66,20 +66,18 @@ li {
   height: auto;
   padding: 2rem 0 0 0;
 }
-.header_container{
-  padding: 1rem 1rem 1rem 1rem;
-}
 @media (min-width:768px){
   .header_container{
     padding: 30rem 5rem 30rem 5rem;
+    max-width: 120rem;
+    margin: 0 auto;
   }
 }
 .header_container_h1{
   font-size: 4rem;
   font-weight:normal;
   letter-spacing: 1.5rem;
-  margin: -3.7rem 0 0 0;
-  position: relative;
+  /* margin: -3.7rem 0 0 0; */
   z-index: 9999;
   height: 14rem;
   font-family: Marcellus, serif;
@@ -131,10 +129,10 @@ li {
   .main_intro_container_box{
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 4rem;
     height: 100%;
+    padding: 3rem 8rem 3rem 8rem;
   }
 }
 .main_intro_container_box_h2{
@@ -203,6 +201,9 @@ li {
 .main_service_container{
   display: flex;
   justify-content: flex-end;
+  padding-right: 10rem;
+  max-width: 120rem;
+  margin: 0 auto;
   }
 }
 .main_service_h2{
@@ -238,7 +239,6 @@ li {
   width: 34.6rem;
   height: 20.4rem;
   margin: 0 auto;
-  padding: 2rem 0 0 0;
 }
 @media (min-width:768px){
   .main_service_container_text{
@@ -249,7 +249,6 @@ li {
 }
 .main_review{
   padding: 2rem 3rem 5rem 3rem;
-  height: 47.1rem;
 }
 @media (min-width:768px){
   .main_review{
@@ -356,7 +355,6 @@ line-height: 1.1;
     display: block;
     width: 90%;
     padding: 0;
-    margin: .5rem;
     list-style: none;
     text-align: center;
 }
@@ -422,6 +420,7 @@ line-height: 1.1;
   padding: 1.5rem .5rem 1.5rem .5rem;
   margin: 2rem 0; /* 上下の間隔を広めに */
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08); 
+  cursor: pointer;
 }
 @media (min-width:768px){
   .qa_item{
@@ -445,18 +444,19 @@ line-height: 1.1;
 }
 .qa_item_box_img{
   width: 1.5rem;
-  padding: .8rem 0 0 0;
+  margin-left: auto;
 }
 @media (min-width:768px){
   .qa_item_box_img{
-    width: 2.2rem;
-    padding: 0 1rem 0 0;
+    width: 1.7rem;
   }
 }
-
-.qa_answer {
+.qa_answer_wrapper{
   display: none;
-  flex-direction: column;
+}
+.qa_answer {
+  display: flex;
+  /* flex-direction: column; */
   padding-top: 0.5rem;
   color: #333;
   overflow: hidden;
@@ -469,8 +469,8 @@ line-height: 1.1;
 .answer_text{
   font-size: 1.4rem;
 }
-.qa_item.active .qa_answer {
-  display: flex;
+.qa_item.active .qa_answer_wrapper {
+  display: block;
 }
 .toggle-btn {
   font-size:.7rem;
@@ -484,12 +484,19 @@ line-height: 1.1;
 .toggle-btn.open img {
   transform: rotate(180deg);
 }
-
+.TopYajirushi_wrapper{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 3rem;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+}
 .footer{
   background-color: #0071CE;
 }
 .footer_container{
-  padding: 1rem 1rem 1rem 1rem;
+  padding:0
 }
 @media (min-width:768px){
   .footer_container{
@@ -530,7 +537,6 @@ line-height: 1.1;
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    padding: 0 0 0 0 ;
   }
 }
 .footer_container_small{

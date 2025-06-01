@@ -1,20 +1,9 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const toggleButtons = document.querySelectorAll(".toggle-btn");
-
-  toggleButtons.forEach(button => {
-    button.addEventListener("click", function () {
-      const qaItem = this.closest(".qa_item");
-
-      // 開閉切り替え
-      qaItem.classList.toggle("active");
-
-      // アイコン回転のクラス切り替え
-      this.classList.toggle("open");
-    });
-  });
-});
 
 $(function () {
+  $(".qa_item_box").on("click",function(){
+    $(this).closest(".qa_item").toggleClass("active");
+    $(this).find(".toggle-btn").toggleClass("open");  
+  });
   $('.main_slick').slick({
     autoplay: true,
     adaptiveHeight: true,
