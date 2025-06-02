@@ -150,7 +150,7 @@ li {
     justify-content: space-between;
     align-items: center;
     height: 100%;
-    padding: 3rem 5rem 3rem 5rem;
+    padding: 4.4rem 4.8rem 4.4rem 4.8rem;
   }
 }
 .main_intro_container_box_title{
@@ -164,7 +164,6 @@ li {
 @media (min-width:768px){
 .main_intro_container_box_title{
   font-size: 2.4rem;
-  margin: 1rem 0 0 0;
 }
 }
   .main_intro_container_box_p{
@@ -189,7 +188,6 @@ li {
     justify-content: center;
     gap: 3rem;
     align-items: center;
-     padding: 2rem 0 0 0;
   }
 }
 .main_intro_container_box_box_top{
@@ -320,18 +318,18 @@ letter-spacing: .2rem;
   }
 }
 .main_slick{
-  padding: 3rem 1rem 0rem 1rem;
+  padding: 4rem 1rem 0rem 1rem;
   /* width: 100% */
   width: 28rem;
   max-width: 120rem;
   margin: 0 auto;
- 
 }
 @media (min-width: 768px) {
   .main_slick {
-    width: 90%;
+    width: 98rem;
     max-width: 90rem;
     margin: 0 auto;
+    padding: 4rem 0rem 0rem 0rem;
   }
 }
 .main_slick .slick-slide {
@@ -341,6 +339,16 @@ letter-spacing: .2rem;
 .main_slick .slick-list {
   margin: 0 -10px;
 }
+@media (min-width: 768px) {
+  .slick_item {
+    width: 30rem !important;
+    margin: 0 2rem;
+  }
+
+  .main_slick .slick-list {
+    margin: 0 -2rem;
+  }
+}
 .slick_item {
   width: 28rem;
   height: 34.4rem;
@@ -348,10 +356,12 @@ letter-spacing: .2rem;
   padding: 2.8rem 1.5rem 2.8rem 1.5rem;
   box-sizing: border-box;
 }
+
 @media (min-width:768px){
   .slick_item{
+    width: 30rem !important;
     height: 38.8rem;
-    padding: 4rem 2rem 2rem 2rem;
+    padding: 4rem 1.6rem 4rem 1.6rem;
   }
 }
 .main_review_container_img img{
@@ -363,8 +373,8 @@ letter-spacing: .2rem;
 .main_review_container_img img{
  display: block;
  margin: 0 auto;
- width: 8rem;
- height: 8rem;
+ width: 10rem;
+ height: 10rem;
 }
 }
 .main_review_container_p{
@@ -375,7 +385,12 @@ letter-spacing: .2rem;
 .main_review_container_text{
   font-size: 1.4rem;
   padding: 2rem 0 0 0;
-
+}
+@media (min-width:768px){
+.main_review_container_text{
+  font-size: 1.6rem;
+  padding: 1.6rem 0 0 0;
+}
 }
 .slide-arrow {
   width: 3.2rem;
@@ -527,6 +542,7 @@ letter-spacing: .2rem;
     margin-bottom: 0.8rem;
     font-size: 1.4rem; 
      display: flex;
+     align-items: flex-start;
 }
 
 @media (min-width:768px){
@@ -581,6 +597,7 @@ letter-spacing: .2rem;
 .toggle-btn {
   font-size:.7rem;
   transition: transform 0.3s;
+  margin-top: .7rem;
 }
 .toggle-btn img {
   transition: transform 0.3s ease;

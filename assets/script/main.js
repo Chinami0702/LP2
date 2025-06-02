@@ -7,11 +7,13 @@ $(function () {
     $('.TopYajirushi_wrapper').fadeOut();
   }
 });
+$(".qa_item_box").on("click", function () {
+  const $content = $(this).next();
+  const $icon = $(this).find(".toggle-btn");
 
-  $(".qa_item_box").on("click",function(){
-    $(this).closest(".qa_item").toggleClass("active");
-    $(this).find(".toggle-btn").toggleClass("open");  
-  });
+  $content.slideToggle();
+  $icon.toggleClass("open");
+});
   $('.main_slick').slick({
     autoplay: true,
     adaptiveHeight: true,
