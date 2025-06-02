@@ -478,13 +478,14 @@ letter-spacing: .2rem;
 }
 .question_text{
   font-size: 1.5rem;
+  line-height: 1;
 }
 .main_qna{
   background: linear-gradient(to right, 
     #F4FFE8 20%,
     #cbf2ff 80% 
   );
-  padding:2.6rem 1rem 2rem 1rem;
+  padding:2.87rem 1rem 1.7rem 1rem;
 }
 
 .main_qna_container{
@@ -519,7 +520,7 @@ letter-spacing: .2rem;
 @media (min-width:768px){
   .main_qna_container_p{
     font-size: 2rem;
-     padding: 0 0 4rem 0;
+     padding: 0 0 4.4rem 0;
   }
 }
 .qa_item{
@@ -533,8 +534,8 @@ letter-spacing: .2rem;
 @media (min-width:768px){
   .qa_item{
   width: 60.5rem;
-  margin: 0 auto 2.4rem auto;
-   padding:2.4rem  2.44rem 2.4rem 2.4rem;
+  margin: 0 auto 2rem auto;
+   padding:2.2rem  2.44rem 2.2rem 2.4rem;
   }
 }
 
@@ -565,7 +566,7 @@ letter-spacing: .2rem;
 }
 .qa_answer {
   display: flex;
-  padding-top: 0.5rem;
+    padding-top: 1.5rem;
   color: #333;
   overflow: hidden;
   transition: max-height 0.3s ease;
@@ -589,6 +590,7 @@ letter-spacing: .2rem;
   .answer_text{
     font-size: 1.5rem;
     width: 51.8rem;
+    line-height: 1.91;
   }
 }
 .qa_item.active .qa_answer_wrapper {
@@ -606,6 +608,7 @@ letter-spacing: .2rem;
 @media (min-width:768px){
   .toggle-btn img{
      margin-left: 6rem;
+     width: 1.16rem;
   }
 }
 
@@ -614,7 +617,7 @@ letter-spacing: .2rem;
 }
 
 .main_intro_two{
-  padding: 5rem 1rem 1rem 1rem;
+  padding: 5rem 1rem .7rem 1rem;
 }
 .TopYajirushi_wrapper{
   display: flex;
