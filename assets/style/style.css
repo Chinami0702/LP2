@@ -1,7 +1,5 @@
 @charset "UTF-8" ;
-/* *{
-  outline: 2px solid red;
-} */
+
 body {
   font-family: serif, sans-serif;
   line-height: 1.75;
@@ -164,6 +162,7 @@ li {
 @media (min-width:768px){
 .main_intro_container_box_title{
   font-size: 2.4rem;
+  margin:  1rem 0 0 0;
 }
 }
   .main_intro_container_box_p{
@@ -177,6 +176,7 @@ li {
   font-size: 1.6rem;
   line-height: 2;
   text-align: left;
+  margin: 1rem 0 0 0;
 }
 }
 .main_intro_container_box_box{
@@ -282,7 +282,7 @@ li {
   }
 }
 .main_review{
-  padding: 5.3rem 3rem 5rem 3rem;
+  padding: 5.3rem 3rem 4.2rem 3rem;
 }
 @media (min-width:768px){
   .main_review{
@@ -412,7 +412,7 @@ letter-spacing: .2rem;
 }
 @media (min-width: 768px) {
   .prev-arrow {
-    left: -10rem;
+    left: -13rem;
   }
 }
 .next-arrow {
@@ -420,7 +420,7 @@ letter-spacing: .2rem;
 }
 @media (min-width: 768px) {
   .next-arrow {
-    right: -10rem;
+    right: -13rem;
   }
 }
 .slick-dots {
@@ -484,7 +484,7 @@ letter-spacing: .2rem;
     #F4FFE8 20%,
     #cbf2ff 80% 
   );
-  padding:3rem 1rem 2rem 1rem;
+  padding:2.6rem 1rem 2rem 1rem;
 }
 
 .main_qna_container{
@@ -532,7 +532,7 @@ letter-spacing: .2rem;
 }
 @media (min-width:768px){
   .qa_item{
-  width: 60rem;
+  width: 60.5rem;
   margin: 0 auto 2.4rem auto;
    padding:2.4rem  2.44rem 2.4rem 2.4rem;
   }
@@ -601,7 +601,7 @@ letter-spacing: .2rem;
 }
 .toggle-btn img {
   transition: transform 0.3s ease;
-  width: 1.16rem;
+  width: 1.7rem;
 }
 @media (min-width:768px){
   .toggle-btn img{
@@ -619,7 +619,7 @@ letter-spacing: .2rem;
 .TopYajirushi_wrapper{
   display: flex;
   justify-content: flex-end;
-  padding-right: 2rem;
+  padding-right: 1.7rem;
   position: sticky;
   bottom: 0;
   left: 0;
@@ -628,7 +628,7 @@ letter-spacing: .2rem;
   .TopYajirushi_wrapper{
   display: flex;
   justify-content: flex-end;
-  margin-right: 15rem;
+  margin-right: 13rem;
   position: sticky;
   bottom: 0;
   left: 0;
