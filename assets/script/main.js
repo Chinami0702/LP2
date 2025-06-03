@@ -2,9 +2,9 @@
 $(function () {
   $(window).on('scroll', function () {
   if ($(this).scrollTop() > 300) {
-    $('.TopYajirushi_wrapper').fadeIn();
+    $('.gototop').fadeIn();
   } else {
-    $('.TopYajirushi_wrapper').fadeOut();
+    $('.gototop').fadeOut();
   }
 });
 $(".qa_item_box").on("click", function () {
