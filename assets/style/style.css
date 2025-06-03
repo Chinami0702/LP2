@@ -342,7 +342,6 @@ letter-spacing: .2rem;
 @media (min-width: 768px) {
   .slick_item {
     width: 30rem !important;
-    margin: 0 2rem;
   }
 
   .main_slick .slick-list {
@@ -350,8 +349,6 @@ letter-spacing: .2rem;
   }
 }
 .slick_item {
-  width: 28rem;
-  height: 34.4rem;
   background-color: #DBF7F9;
   padding: 2.8rem 1.5rem 2.8rem 1.5rem;
   box-sizing: border-box;
