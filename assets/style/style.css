@@ -547,7 +547,7 @@ html {
 
 .question_text {
     font-size: 1.5rem;
-    line-height: 1;
+    line-height: 1.9;
 }
 
 .main_qna {
@@ -601,7 +601,7 @@ html {
 .qa_item {
     width: 35.8rem;
     background: #ffffff;
-    padding: 2rem 1.64rem 2rem 1.6rem;
+    padding: 2rem 1.64rem 3.5rem 1.6rem;
     margin: 2rem auto 2rem auto;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
     cursor: pointer;
@@ -646,7 +646,7 @@ html {
 
 .qa_answer {
     display: flex;
-    padding-top: 1.5rem;
+    padding-top: 1rem;
     color: #333;
     overflow: hidden;
     transition: max-height 0.3s ease;
