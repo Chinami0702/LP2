@@ -22,8 +22,8 @@ $(".qa_item_box").on("click", function () {
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 3,
-    prevArrow: '<img src="/assets/image/arrow-left-circle-fill.png" class="slide-arrow prev-arrow">',
-    nextArrow: '<img src="/assets/image/arrow-right-circle-fill.png" class="slide-arrow next-arrow">',
+    prevArrow: '<img src="/assets/image/left.svg" class="slide-arrow prev-arrow">',
+    nextArrow: '<img src="/assets/image/right.svg" class="slide-arrow next-arrow">',
     responsive: [
       {
         breakpoint: 768,
