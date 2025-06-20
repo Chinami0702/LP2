@@ -9,31 +9,18 @@
     <meta property="og:title" content="肌のうるおい、煌めく Kirameki Cream | Kira-meki">
     <meta property="og:description" content="Kirameki Creamはお肌のうるおいを美しく保ちます。">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://example.com/LP2/">
+    <meta property="og:url" content="https://example.com/">
     <meta property="og:site_name" content="Kira-meki">
     <!--リセットcss-->
     <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css">
     <!--フォント-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&family=Poppins:wght@400;500;600&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Marcellus&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&family=Poppins:wght@400;500;600&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Marcellus&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&family=Poppins:wght@400;500;600&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Marcellus&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
     <!--リンク-->
     <link rel="stylesheet" type="text/css"
-        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-    <link rel="stylesheet" href="/assets/style/style.css">
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="/assets/style/main.css">
     <link rel="stylesheet" href="/assets/script/slick/slick.css">
 
 </head>
@@ -41,7 +28,7 @@
 <body>
     <header class="header">
         <div class="header_container">
-            <img src="/assets/image/logo_sp.svg" class="header_logo" alt="">
+            <img src="/assets/image/logo_sp.svg" class="header_logo" alt="Kira-meki">
             <h1 class="header_title"><span class="header_title-text">Kirameki<br>Cream</span>
                 <small class="header_title-catch">肌のうるおい、煌めく。</small>
             </h1>
@@ -53,15 +40,15 @@
             <div class="main_intro_container">
                 <div class="main_intro_container_box">
                     <div>
-                        <h2 class="main_intro_container_box_title">キラメキクリーム</h2>
+                        <p class="main_intro_container_box_title">キラメキクリーム</p>
                         <p class="main_intro_container_box_p">税込4,000円</p>
                     </div>
                     <div class="main_intro_container_box_box">
-                        <a class="main_intro_container_box_box_top" href="/shop/">
+                        <a class="main_intro_container_box_box_top" href="#">
                             オンラインショップへ
                         </a>
-                        <form action="/cart/">
-                            <a href="/cart/" class="main_intro_container_box_box_top">購入する</a>
+                        <form action="/cart/" method="POST" class="main_intro_container_box_box_top">
+                            <button type="submit" class="main_intro_container_box_box_top_txt">購入する</button>
                         </form>
 
                     </div>
@@ -125,11 +112,11 @@
                     <div class="slick_item">
                         <div class="main_review_container_img">
                             <picture>
-                                <source media="(min-width:768px)" srcset="/assets/image/review_01.png">
-                                <img src="/assets/image/review_01.png" alt="">
+                                <source media="(min-width:768px)" srcset="/assets/image/review_04.png">
+                                <img src="/assets/image/review_04.png" alt="">
                             </picture>
                         </div>
-                        <p class="main_review_container_p">Aさん</p>
+                        <p class="main_review_container_p">Dさん</p>
                         <div class="main_review_container_text">
                             ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
                         </div>
@@ -137,11 +124,11 @@
                     <div class="slick_item">
                         <div class="main_review_container_img">
                             <picture>
-                                <source media="(min-width:768px)" srcset="/assets/image/review_02.png">
-                                <img src="/assets/image/review_02.png" alt="">
+                                <source media="(min-width:768px)" srcset="/assets/image/review_05.png">
+                                <img src="/assets/image/review_05.png" alt="">
                             </picture>
                         </div>
-                        <p class="main_review_container_p">Bさん</p>
+                        <p class="main_review_container_p">Eさん</p>
                         <div class="main_review_container_text">
                             ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
                         </div>
@@ -149,11 +136,11 @@
                     <div class="slick_item">
                         <div class="main_review_container_img">
                             <picture>
-                                <source media="(min-width:768px)" srcset="/assets/image/review_03.png">
-                                <img src="/assets/image/review_03.png" alt="">
+                                <source media="(min-width:768px)" srcset="/assets/image/review_06.png">
+                                <img src="/assets/image/review_06.png" alt="">
                             </picture>
                         </div>
-                        <p class="main_review_container_p">Cさん</p>
+                        <p class="main_review_container_p">Fさん</p>
                         <div class="main_review_container_text">
                             ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
                         </div>
@@ -162,93 +149,87 @@
             </div>
         </section>
         <!--q&a-->
-        <section class="main_qna">
-            <div class="main_qna_container">
-                <h2 class="main_qna_container_title">Q&A</h2>
-                <p class="main_qna_container_p">よくあるご質問</p>
+        <section class="main_qa">
+            <div class="main_qa_container">
+                <h2 class="main_qa_container_title">Q&A</h2>
+                <p class="main_qa_container_p">よくあるご質問</p>
             </div>
-            <div class="main_qna_container_box">
-                <div class="qa_item">
-                    <div class="qa_item_box">
+            <div class="main_qa_container_box">
+                <dl class="qa_item">
+                    <dt class="qa_item_box">
                         <p class="question">Q.</p>
                         <p class="question_text">テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                        <p class="toggle-btn"><img src="/assets/image/down.svg" alt=""
-                                class="qa_item_box_img"></p>
-                    </div>
-                    <div class="qa_answer_wrapper">
+                        <p class="toggle-btn"><img src="/assets/image/down.svg" alt="" class="qa_item_box_img"></p>
+                    </dt>
+                    <dd class="qa_answer_wrapper">
                         <div class="qa_answer">
                             <p class="answer">A.</p>
                             <p class="answer_text">
                                 テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
                             </p>
                         </div>
-
-                    </div>
-                </div>
-                <div class="qa_item">
-                    <div class="qa_item_box">
+                    </dd>
+                </dl>
+                <dl class="qa_item">
+                    <dt class="qa_item_box">
                         <p class="question">Q.</p>
                         <p class="question_text">テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                        <p class="toggle-btn"><img src="/assets/image/down.svg" alt=""
-                                class="qa_item_box_img"></p>
-                    </div>
-                    <div class="qa_answer_wrapper">
+                        <p class="toggle-btn"><img src="/assets/image/down.svg" alt="" class="qa_item_box_img"></p>
+                    </dt>
+                    <dd class="qa_answer_wrapper">
                         <div class="qa_answer">
                             <p class="answer">A.</p>
                             <p class="answer_text">
                                 テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
                             </p>
                         </div>
-                    </div>
-                </div>
-                <div class="qa_item">
-                    <div class="qa_item_box">
+                    </dd>
+                </dl>
+                <dl class="qa_item">
+                    <dt class="qa_item_box">
                         <p class="question">Q.</p>
                         <p class="question_text">テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                        <p class="toggle-btn"><img src="/assets/image/down.svg" alt=""
-                                class="qa_item_box_img"></p>
-                    </div>
-                    <div class="qa_answer_wrapper">
+                        <p class="toggle-btn"><img src="/assets/image/down.svg" alt="" class="qa_item_box_img"></p>
+                    </dt>
+                    <dd class="qa_answer_wrapper">
                         <div class="qa_answer">
                             <p class="answer">A.</p>
                             <p class="answer_text">
                                 テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
                             </p>
                         </div>
-                    </div>
-                </div>
-                <div class="qa_item">
-                    <div class="qa_item_box">
+                    </dd>
+                </dl>
+                <dl class="qa_item">
+                    <dt class="qa_item_box">
                         <p class="question">Q.</p>
                         <p class="question_text">テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                        <p class="toggle-btn"><img src="/assets/image/down.svg" alt=""
-                                class="qa_item_box_img"></p>
-                    </div>
-                    <div class="qa_answer_wrapper">
+                        <p class="toggle-btn"><img src="/assets/image/down.svg" alt="" class="qa_item_box_img"></p>
+                    </dt>
+                    <dd class="qa_answer_wrapper">
                         <div class="qa_answer">
                             <p class="answer">A.</p>
                             <p class="answer_text">
                                 テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
                             </p>
                         </div>
-                    </div>
-                </div>
-                <div class="qa_item">
-                    <div class="qa_item_box">
+                    </dd>
+                </dl>
+                <dl class="qa_item">
+                    <dt class="qa_item_box">
                         <p class="question">Q.</p>
                         <p class="question_text">テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                        <p class="toggle-btn"><img src="/assets/image/down.svg" alt=""
-                                class="qa_item_box_img"></p>
-                    </div>
-                    <div class="qa_answer_wrapper">
+                        <p class="toggle-btn"><img src="/assets/image/down.svg" alt="" class="qa_item_box_img"></p>
+                    </dt>
+                    <dd class="qa_answer_wrapper">
                         <div class="qa_answer">
                             <p class="answer">A.</p>
                             <p class="answer_text">
                                 テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
                             </p>
                         </div>
-                    </div>
-                </div>
+                    </dd>
+                </dl>
             </div>
 
         </section>
@@ -257,15 +238,15 @@
             <div class="main_intro_container">
                 <div class="main_intro_container_box">
                     <div>
-                        <h2 class="main_intro_container_box_title">キラメキクリーム</h2>
+                        <p class="main_intro_container_box_title">キラメキクリーム</p>
                         <p class="main_intro_container_box_p">税込4,000円</p>
                     </div>
                     <div class="main_intro_container_box_box">
-                        <a class="main_intro_container_box_box_top" href="/shop/">
+                        <a class="main_intro_container_box_box_top" href="#">
                             オンラインショップへ
                         </a>
-                        <form action="/cart/">
-                            <a href="/cart/" class="main_intro_container_box_box_top">購入する</a>
+                        <form action="/cart/" method="POST" class="main_intro_container_box_box_top">
+                            <button type="submit" class="main_intro_container_box_box_top_txt">購入する</button>
                         </form>
 
                     </div>
@@ -284,14 +265,14 @@
             <div class="footer_title">
                 <picture>
                     <source media="(min-width:768px)" srcset="/assets/image/footer_logo_pc.svg">
-                    <img src="/assets/image/footer_logo_sp.svg" alt="" class="footer_title_img">
+                    <img src="/assets/image/footer_logo_sp.svg" alt="Kira-meki" class="footer_title_img">
                 </picture>
             </div>
-            <div class="footer_text">
-                <a href=" /company/">会社概要</a>
-                <a href=" /privacy-policy/">個人情報保護ポリシー</a>
-                <a href=" /contact/">お問い合わせ</a>
-            </div>
+            <ul class="footer_text">
+                <li href=" /company/">会社概要</li>
+                <li href=" /privacy-policy/">個人情報保護ポリシー</li>
+                <li href=" /contact/">お問い合わせ</li>
+            </ul>
             <small class="footer_container_small">© 2023 Kira-meki Inc. All rights reserved.</small>
         </div>
     </footer>
