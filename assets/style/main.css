@@ -4,6 +4,7 @@ body {
     font-family: serif, sans-serif;
     line-height: 1.75;
     color: #333;
+    outline:  1px solid red;
 }
 
 a {
@@ -23,6 +24,7 @@ li {
 html {
     font-size: calc(10 * 100vw / 390);
     scroll-behavior: smooth;
+    outline:1px solid red;
 }
 
 @media (min-width:768px) {
@@ -599,7 +601,6 @@ html {
     font-weight: 600;
     line-height: 1;
 }
-
 @media (min-width:768px) {
     .main_qna_container_p {
         font-size: 2rem;
