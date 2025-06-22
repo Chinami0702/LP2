@@ -115,7 +115,7 @@ html {
         margin-top: 21rem;
         font-size: 5rem;
         letter-spacing: 0.3em;
-        line-height: 1.3;
+        line-height: 1.34;
     }
 }
 
@@ -130,7 +130,7 @@ html {
 @media(min-width:768px) {
     .header_title-catch {
         font-size: 2.5rem;
-        margin: 2rem 0 0 0;
+        margin: 1.6rem 0 0 0;
         letter-spacing: .8rem;
     }
 }
@@ -173,7 +173,8 @@ padding: 2.5rem 2.9rem 3.4rem 2.6rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 4.4rem 4.8rem 4.4rem 4.8rem;
+        padding: 4.7rem 4.8rem 4.4rem 4.8rem;
+       
     }
 }
 
@@ -189,6 +190,7 @@ padding: 2.5rem 2.9rem 3.4rem 2.6rem;
 @media (min-width:768px) {
     .main_intro_container_box_title {
         font-size: 2.4rem;
+         letter-spacing: 0.1em;
     }
 }
 
@@ -223,7 +225,7 @@ padding: 2.5rem 2.9rem 3.4rem 2.6rem;
         justify-content: center;
         gap: 3rem;
         align-items: center;
-        margin: 0;
+        margin-top: -1rem;
     }
 }
 
@@ -309,6 +311,7 @@ padding: 2.5rem 2.9rem 3.4rem 2.6rem;
     .main_service_title {
         font-size: 3.8rem;
         text-align: left;
+        margin: 1.6rem 0 .5rem 0;
     }
 }
 
@@ -339,7 +342,7 @@ padding: 2.5rem 2.9rem 3.4rem 2.6rem;
     .main_service_container_text {
         width: 41.9rem;
         font-size: 1.4rem;
-        margin: 0 0 0 0;
+        margin: 1.45rem 0 0 0;
     }
 }
 
@@ -351,7 +354,7 @@ padding: 2.5rem 2.9rem 3.4rem 2.6rem;
 @media (min-width:768px) {
     .main_review {
         height: 71rem;
-        padding: 8.6rem 2rem 7rem 2rem;
+        padding: 8.6rem 2rem 7.5rem 2rem;
     }
 
     .main_review_container {
@@ -371,6 +374,7 @@ letter-spacing: .15rem;
     .main_review_title {
         font-size: 4.5rem;
         margin: 0 0 1rem 0;
+        letter-spacing: .05em;
     }
 }
 
@@ -385,6 +389,7 @@ letter-spacing: .15rem;
 @media (min-width:768px) {
     .main_review_p {
         font-size: 2rem;
+         margin: .1rem 0 0 0;
     }
 }
 
@@ -399,7 +404,7 @@ letter-spacing: .15rem;
     .main_slick {
         width: 98rem;
         margin: 0 auto;
-        padding: 4rem 0rem 0rem 0rem;
+        padding: 3.5rem 0rem 0rem 0rem;
     }
 }
 
@@ -555,7 +560,7 @@ letter-spacing: .15rem;
 }
 @media (min-width: 768px) {
   .main_slick .slick-slide {
-    margin: 0 2rem;
+    margin: 0 1.4rem;
   }
 }
 
@@ -581,7 +586,7 @@ letter-spacing: .15rem;
     background: linear-gradient(to right,
             #F4FFE8 20%,
             #cbf2ff 80%);
-    padding: 2.5rem 1rem 1.3rem 1rem;
+    padding: 2.9rem 1rem 1.7rem 1rem;
 }
 
 .main_qa_container {
@@ -647,16 +652,16 @@ letter-spacing: .15rem;
 }
 @media (min-width:768px){
     .qa_item:nth-of-type(2) {
-   padding: 2.2rem 1.64rem 2rem 2.4rem;
+   padding: 2.2rem 1.64rem 2rem 2.7rem;
 }
 .qa_item:nth-of-type(3) {
-   padding: 2.2rem 1.64rem 2rem 2.4rem;
+   padding: 2.2rem 1.64rem 2rem 2.7rem;
 }
 .qa_item:nth-of-type(4) {
-    padding: 2.2rem 1.64rem 2rem 2.4rem;
+    padding: 2.2rem 1.64rem 2rem 2.7rem;
 }
 .qa_item:nth-of-type(5) {
-    padding: 2.2rem 1.64rem 2rem 2.4rem;
+    padding: 2.5rem 1.64rem 2rem 2.6rem;
 }
 }
 
@@ -666,7 +671,7 @@ letter-spacing: .15rem;
     .qa_item {
         width: 60.5rem;
         margin: 0 auto 2rem auto;
-        padding: 2.2rem 2.44rem 2.2rem 2.4rem;
+        padding: 2.3rem 2.44rem 2.2rem 2.5rem;
     }
 }
 
@@ -736,6 +741,7 @@ letter-spacing: .15rem;
         font-size: 1.5rem;
         width: 51.8rem;
         line-height: 1.91;
+        margin: .2rem 0 0 .16rem;
     }
 }
 
@@ -747,6 +753,12 @@ letter-spacing: .15rem;
     font-size: .7rem;
     transition: transform 0.3s;
     margin-top: 1.3rem;
+}
+@media (min-width:768px){
+    
+.toggle-btn {
+    margin-top: 0rem;
+}
 }
 
 .toggle-btn img {
@@ -770,10 +782,18 @@ letter-spacing: .15rem;
     padding: 5rem 1.5rem .9rem 1.5rem;
 }
 .main_intro_container_box_p_two{
-    margin-top: -.2rem;
+    margin-top: -0rem;
+}
+@media (min-width:768px){
+    .main_intro_container_box_p_two{
+    margin-top: 1rem;
+}
 }
 .main_intro_container_box_p_two span{
     margin-left: .4rem;
+}
+.main_intro_container_box_title_two{
+    margin-top: -.2rem;
 }
 
 /* Topに戻るボタン */
@@ -791,7 +811,7 @@ letter-spacing: .15rem;
     .gototop_wrapper {
         display: flex;
         justify-content: flex-end;
-        margin-right: 13rem;
+        margin-right: 13.3rem;
         position: sticky;
         bottom: 2rem;
         left: 0;
@@ -816,13 +836,14 @@ letter-spacing: .15rem;
     .footer {
         background-color: #0071CE;
         height: 10.5rem;
-        padding: 3.2rem 18.2rem;
+        padding: 3.2rem 0rem 3.2rem 0rem;
     }
 
     .footer_container {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 17.3rem 15.4rem;
         height: 100%;
         max-width: 120rem;
         margin: 0 auto;
@@ -840,7 +861,7 @@ letter-spacing: .15rem;
     .footer_title_img {
         width: 18.5rem;
         height: auto;
-        margin: 0 0 0 0;
+        margin: 0 0 0 -.2rem;
     }
 }
 
@@ -860,6 +881,7 @@ letter-spacing: .15rem;
 
 @media (min-width:768px) {
     .footer_text {
+           padding: 0 0 0 5.8rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -882,6 +904,7 @@ letter-spacing: .15rem;
         display: flex;
         justify-content: center;
         align-items: center;
+        letter-spacing: .04em;
         gap: 2rem;
     }
 }
